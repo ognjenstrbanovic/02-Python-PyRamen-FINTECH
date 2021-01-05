@@ -1,6 +1,6 @@
 # PyRamen 🍜
 ## PyRamen (Optional)
-![Ramen!](https://media.githubusercontent.com/media/coding-boot-camp/FinTech-Lesson-Plans/master/02-Homework/02-Python/Instructions/Images/ramen.jpg?token=AKUDNLQN5HNIPBV3SX6PPB276TKJK)
+![Ramen!](https://github.com/ognjenstrbanovic/PyRamen/blob/main/images/ramen.jpg?raw=true)
 ## Background
 
 Welcome to Ichiban Ramen!
