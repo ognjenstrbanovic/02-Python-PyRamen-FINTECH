@@ -29,8 +29,6 @@ with open(menu_filepath, 'r') as menu_csv_file:
     for row in menu_csv_reader:
         menu.append(row)
 
-print(menu)
-
 
 # @TODO: Read in the sales data into the sales list
 
@@ -46,8 +44,6 @@ with open(sales_filepath, 'r') as sales_csv_file:
     for row in sales_csv_reader:
         sales.append(row)
 
-print(sales)
-
 
 # @TODO: Initialize dict object to hold our key-value pairs of items and metrics
 report = {}
@@ -57,12 +53,12 @@ row_count = 0
 
 # @TODO: Loop over every row in the sales list object
 
-
-
+for row in sales:
+    print(row)
 
     # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
     # @TODO: Initialize sales data variables
-
+    
 
     # @TODO:
     # If the item value not in the report, add it as a new entry with initialized metrics
