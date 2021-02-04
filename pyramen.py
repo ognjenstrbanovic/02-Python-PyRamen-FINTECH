@@ -58,7 +58,8 @@ for row in sales:
 
     # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
     # @TODO: Initialize sales data variables
-    
+    quantity = int(row[3])
+    menu_item = row[4]
 
     # @TODO:
     # If the item value not in the report, add it as a new entry with initialized metrics
