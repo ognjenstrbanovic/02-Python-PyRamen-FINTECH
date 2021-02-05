@@ -138,12 +138,4 @@ Complete the following:
 
 ---
 
-## Submission
-
-* Upload homework files to your GitHub repo.
-
-* Submit the link to your GitHub repo on Bootcamp Spot.
-
----
-
 © 2019 Trilogy Education Services
