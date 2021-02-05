@@ -74,43 +74,47 @@ for row in sales:
 
 
     # @TODO: For every row in our sales data, loop over the menu records to determine a match
-
+    for record in menu:
 
         # Item,Category,Description,Price,Cost
         # @TODO: Initialize menu data variables
-
-
-
+        item = record[0]
+        price = float(record[3])
+        cost = float(record[4])
+        
 
         # @TODO: Calculate profit of each item in the menu data
-
+        profit = price - cost
 
         # @TODO: If the item value in our sales data is equal to the any of the items in the menu, then begin tracking metrics for that item
-
+        if sales_item == item:
 
             # @TODO: Print out matching menu data
-
-
-
-
-
+            print(f"Does {sales_item} equal {item}? WE HAVE A MATCH!!!")
+            print(f"   Item: {item}")
+            print(f"   Price: ${price}")
+            print(f"   Cost: ${cost}")
+            print(f"   Profit: ${profit}")
 
             # @TODO: Cumulatively add up the metrics for each item key
-
-
-
-
+            report[sales_item]["01-count"] += quantity
+            report[sales_item]["02-revenue"] += price * quantity
+            report[sales_item]["03-cogs"] += cost * quantity
+            report[sales_item]["04-profit"] += profit * quantity
 
         # @TODO: Else, the sales item does not equal any fo the item in the menu data, therefore no match
-
-
+        else:
+            print(f"{sales_item} does not equal {item}! NO MATCH!")
 
     # @TODO: Increment the row counter by 1
-
+    row_count += 1
 
 # @TODO: Print total number of records in sales data
-
-
+print("Total Number of Records:", row_count)
 
 
 # @TODO: Write out report to a text file (won't appear on the command line output)
+with open("PyRamen.txt", "a") as file:
+    for key, value in report.items():
+        line = f"{key} {value}\n"
+        file.write(line)
