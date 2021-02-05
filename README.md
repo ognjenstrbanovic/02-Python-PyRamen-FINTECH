@@ -139,3 +139,9 @@ Complete the following:
 ---
 
 © 2019 Trilogy Education Services
+
+---
+<figure class="image">
+ <img src="https://github.com/ognjenstrbanovic/PyRamen_FINTECH/blob/main/ramen_gif?raw=true" height="33%" width="33%">
+ <figcaption>Anime character enjoying ramen</figcaption>
+</figure>
