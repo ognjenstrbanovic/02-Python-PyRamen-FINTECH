@@ -59,17 +59,18 @@ for row in sales:
     # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
     # @TODO: Initialize sales data variables
     quantity = int(row[3])
-    menu_item = row[4]
+    sales_item = row[4]
 
     # @TODO:
     # If the item value not in the report, add it as a new entry with initialized metrics
     # Naming convention allows the keys to be ordered in logical fashion, count, revenue, cost, profit
-
-
-
-
-
-
+    if sales_item not in report.keys():
+        report[sales_item] = {
+            "01-count": 0,
+            "02-revenue": 0,
+            "03-cogs": 0,
+            "04-profit": 0,
+        }
 
 
     # @TODO: For every row in our sales data, loop over the menu records to determine a match
